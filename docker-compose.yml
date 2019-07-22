@@ -8,3 +8,9 @@ services:
       ENV: DEV
     volumes:
       - ./app:/app
+    # TODO linksから変更する
+    links:
+      - dnmonster
+
+  dnmonster:
+    image: amouat/dnmonster:1.0
