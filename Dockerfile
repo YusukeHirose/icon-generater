@@ -1,7 +1,7 @@
 FROM python:latest
 
 RUN groupadd -r uwsgi && useradd -r -g uwsgi uwsgi
-RUN pip install --upgrade pip Flask uWSGI requests
+RUN pip install --upgrade pip Flask uWSGI requests redis
 
 WORKDIR /app
 
